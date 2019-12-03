@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            textarea {
+                width: 200px;
+                height: 120px;
+            }
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/blog">Main Blog Page</a>
+        <a href="/newpost">Add a Blog Entry</a>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
